@@ -1,0 +1,428 @@
+{
+  "categories": {
+    "TV": {
+      "Brands": {
+        "Sony": {
+          "Bravia": {
+            "image":"",
+            "price": 50000,
+            "rating": 5,
+            "discount": "30%"
+          }
+        },
+        "Onida": {
+          "Thunder": {
+            "image":"",
+            "price": 25000,
+            "rating": 3,
+            "discount": "20%"
+          }
+        },
+        "Samsung":{
+          "Thunder": {
+            "image":"",
+            "price": 25000,
+            "rating": 3,
+            "discount": "20%"
+          }
+        },
+        "LG":{
+          "Crystal 4K": {
+            "image":"",
+            "price": 40000,
+            "rating": 4,
+            "discount": "10%"
+          }
+        },
+        "OnePlus":{
+          "Y Series 4K": {
+            "image":"",
+            "price": 30000,
+            "rating": 4,
+            "discount": "10%"
+          }
+        },
+        "Xiaomi":{
+          "MI 5A": {
+            "image":"",
+            "price": 25000,
+            "rating": 4,
+            "discount": "25%"
+          }
+        },
+        "Micromax":{
+          "In Series": {
+            "image":"",
+            "price": 15000,
+            "rating": 3,
+            "discount": "20%"
+          }
+        },
+        "Panasonic":{
+          "Eluga": {
+            "image":"",
+            "price": 25000,
+            "rating": 4,
+            "discount": "25%"
+          }
+        },
+        "Realme":{
+          "Bezel": {
+            "image":"",
+            "price": 25000,
+            "rating": 3,
+            "discount": "20%"
+          }
+        }
+      }
+    },
+    "Mobile Phones": {
+      "Brands": {
+        "Apple": {
+          "Iphone 14": {
+            "image":"",
+            "price": 80000,
+            "rating": 5,
+            "discount": "20%"
+          }
+        },
+        "Xiaomi": {
+          "Mi 11i Hypercharge": {
+            "image":"",
+            "price": 32000,
+            "rating": 5,
+            "discount": "30%"
+          }
+        },
+        "One Plus":{
+          "Nord 2": {
+            "image":"",
+            "price": 30000,
+            "rating": 4,
+            "discount": "20%"
+          }
+        },
+        "Realme":{
+          "Narzo 30": {
+            "image":"",
+            "price": 16000,
+            "rating": 3,
+            "discount": "30%"
+          }
+        },
+        "Motorola":{
+          "Edge 30": {
+            "image":"",
+            "price": 35000,
+            "rating": 5,
+            "discount": "40%"
+          }
+        },
+        "POCO":{
+          "M4 Pro 5g": {
+            "image":"",
+            "price": 20000,
+            "rating": 4,
+            "discount": "10%"
+          }
+        },
+        "IQOO":{
+          "z6 Lite": {
+            "image":"",
+            "price": 22000,
+            "rating": 4,
+            "discount": "30%"
+          }
+        },
+        "Oppo":{
+          "Reno 7": {
+            "image":"",
+            "price": 40000,
+            "rating": 4,
+            "discount": "30%"
+          }
+        },
+        "Vivo":{
+          "Y6": {
+            "image":"",
+            "price": 23000,
+            "rating": 3,
+            "discount": "20%"
+          }
+        }
+      }
+    },
+    "Laptops":{
+      "Brands": {
+        "Dell": {
+          "inspiron": {
+            "image":"",
+            "price": 100000,
+            "rating": 4,
+            "discount": "50%"
+          }
+        },
+        "HP": {
+          "Pavilion": {
+            "image":"",
+            "price": 100000,
+            "rating": 5,
+            "discount": "40%"
+          }
+        },
+        "Apple":{
+          "Macbook Pro": {
+            "image":"",
+            "price": 150000,
+            "rating": 4,
+            "discount": "30%"
+          }
+        },
+        "Lenovo":{
+          "Thinkpad": {
+            "image":"",
+            "price": 100000,
+            "rating": 4,
+            "discount": "10%"
+          }
+        },
+        "Asus":{
+          "Vivobook": {
+            "image":"",
+            "price": 80000,
+            "rating": 4,
+            "discount": "35%"
+          }
+        },
+        "Acer":{
+          "Predator": {
+            "image":"",
+            "price": 70000,
+            "rating": 3,
+            "discount": "30%"
+          }
+        },
+        "Xiaomi":{
+          "Notebook": {
+            "image":"",
+            "price": 60000,
+            "rating": 2,
+            "discount": "40%"
+          }
+        }
+      }
+    },
+    "Men Clothing":{
+      "Brands": {
+        "Highlander": {
+          "Shirts": {
+            "image":"",
+            "price": 1000,
+            "rating": 3,
+            "discount": "50%"
+          }
+        },
+        "Roadster": {
+          "Jeans": {
+            "image":"",
+            "price": 2000,
+            "rating": 4,
+            "discount": "30%"
+          }
+        },
+        "Wrogn":{
+          "Trousers": {
+            "image":"",
+            "price": 1500,
+            "rating": 5,
+            "discount": "10%"
+          }
+        },
+        "Buda Jeans Co.":{
+          "Jackets": {
+            "image":"",
+            "price": 6000,
+            "rating": 4,
+            "discount": "30%"
+          }
+        },
+        "HRX":{
+          "Track Suits": {
+            "image":"",
+            "price": 10000,
+            "rating": 3,
+            "discount": "20%"
+          }
+        },
+        "Being Human":{
+          "T-Shirts": {
+            "image":"",
+            "price": 2000,
+            "rating": 5,
+            "discount": "10%"
+          }
+        },
+        "Louis Phillipe":{
+          "Shirts": {
+            "image":"",
+            "price": 5000,
+            "rating": 4,
+            "discount": "50%"
+          }
+        },
+        "Blackberrys":{
+          "Suits": {
+            "image":"",
+            "price": 20000,
+            "rating": 5,
+            "discount": "40%"
+          }
+        },
+        "Mufti":{
+          "Jeans": {
+            "image":"",
+            "price": 3000,
+            "rating": 3,
+            "discount": "10%"
+          }
+        }
+      }
+    },
+    "Bagpacks":{
+      "Brands": {
+        "Skybags": {
+          "Laptop Bags": {
+            "image":"",
+            "price": 1000,
+            "rating": 4,
+            "discount": "0%"
+          }
+        },
+        "American Tourister": {
+          "Adventure Bags": {
+            "image":"",
+            "price": 4000,
+            "rating": 3,
+            "discount": "25%"
+          }
+        },
+        "Samsonite":{
+          "Luggage Bags": {
+            "image":"",
+            "price": 10000,
+            "rating": 4,
+            "discount": "10%"
+          }
+        },
+        "VIP":{
+          "Duffle Bags": {
+            "image":"",
+            "price": 10000,
+            "rating": 5,
+            "discount": "30%"
+          }
+        },
+        "Aristocrat":{
+          "Suitcase": {
+            "image":"",
+            "price": 20000,
+            "rating": 4,
+            "discount": "10%"
+          }
+        },
+        "Tommy Hilfiger":{
+          "Casual Bags": {
+            "image":"",
+            "price": 1000,
+            "rating": 4,
+            "discount": "5%"
+          }
+        },
+        "Safari":{
+          "Trolley Bags": {
+            "image":"",
+            "price": 5000,
+            "rating": 5,
+            "discount": "5%"
+          }
+        }
+      }
+    },
+    "Men Grooming":{
+      "Brands": {
+        "Park Avenue": {
+          "Deodorant": {
+            "image":"",
+            "price": 500,
+            "rating": 4,
+            "discount": "60%"
+          }
+        },
+        "Beardo": {
+          "Beard Oil": {
+            "image":"",
+            "price": 1000,
+            "rating": 3,
+            "discount": "70%"
+          }
+        },
+        "Bombay Shaving Co.":{
+          "After Shave Lotion": {
+            "image":"",
+            "price": 500,
+            "rating": 4,
+            "discount": "50%"
+          }
+        },
+        "Philips":{
+          "Beard Trimmer": {
+            "image":"",
+            "price": 5000,
+            "rating": 5,
+            "discount": "50%"
+          }
+        },
+        "Ustraa":{
+          "Charcoal Facewash": {
+            "image":"",
+            "price": 500,
+            "rating": 2,
+            "discount": "60%"
+          }
+        },
+        "FRSH":{
+          "Perfume": {
+            "image":"",
+            "price": 1000,
+            "rating": 4,
+            "discount": "30%"
+          }
+        },
+        "Denver":{
+          "Deodorant": {
+            "image":"",
+            "price": 500,
+            "rating": 4,
+            "discount": "80%"
+          }
+        },
+        "Syska":{
+          "Beard Trimmer": {
+            "image":"",
+            "price": 5000,
+            "rating": 4,
+            "discount": "40%"
+          }
+        },
+        "Garnier":{
+          "Facewash": {
+            "image":"",
+            "price": 500,
+            "rating": 5,
+            "discount": "60%"
+          }
+        }
+      }
+    }
+  }
+}
