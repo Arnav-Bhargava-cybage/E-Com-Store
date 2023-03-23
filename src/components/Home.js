@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeContainer,HomeTitle } from './styledComponents/HomeContainer';
+import { HomeContainer,HomeTitle } from './styledComponents/Index';
 
 function Home() {
     return (

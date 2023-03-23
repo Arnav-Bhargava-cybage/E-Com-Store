@@ -1,15 +1,23 @@
 import React from 'react';
+import {Card,Image,Price,Rating,StarIcon,Discount} from './styledComponents/Index';
 
 function Product({ data }) {
-      return (
-        <div>
-          <h1>{data.name}</h1>
-          <p>{data.description}</p>
-          <p>Price: {data.price}</p>
-          <p>Rating: {data.rating}</p>
-          <p>Discount: {data.discount}</p>
-        </div>
-      );
-    }
-    
-    export default Product;
+  const ratingStars = [];
+  for (let i = 0; i < data.rating; i++) {
+    ratingStars.push(<StarIcon key={i}>★</StarIcon>);
+  }
+
+  return (
+    <Card>
+      <Image src={data.image} alt={data.name} />
+      <Price><strong>Price: ₹</strong> {data.price}</Price>
+      <Rating>
+        <strong>Rating:</strong> {ratingStars}
+      </Rating>
+      <Discount><strong>Discount:</strong> {data.discount}</Discount>
+    </Card>
+  );
+}
+
+export default Product;
+

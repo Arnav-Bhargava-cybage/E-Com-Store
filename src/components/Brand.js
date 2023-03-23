@@ -1,21 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import {BrandWrapper,Title,List,ListItem,StyledLink} from './styledComponents/Index';
 
 
 function Brand({ data, category, brand }) {
-      return (
-        <div>
-          <h1>
-            {category} - {brand}
-          </h1>
-          <ul>
-            {Object.entries(data.Brands[brand]).map(([productName, productData]) => (
-              <li key={productName}>
-                <Link to={`/categories/${category}/${brand}/${productName}`}>{productName}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      );
-    }
+  return (
+    <BrandWrapper>
+      <Title>
+        {category} - {brand}
+      </Title>
+      <List>
+        {Object.entries(data.Brands[brand]).map(([productName, productData]) => (
+          <ListItem key={productName}>
+            <StyledLink to={`/categories/${category}/${brand}/${productName}`}>{productName}</StyledLink>
+          </ListItem>
+        ))}
+      </List>
+    </BrandWrapper>
+  );
+}
+
 export default Brand;

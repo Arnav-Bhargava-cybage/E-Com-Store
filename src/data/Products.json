@@ -4,7 +4,7 @@
       "Brands": {
         "Sony": {
           "Bravia": {
-            "image":"",
+            "image":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81lpllAGcBL._SL1500_.jpg",
             "price": 50000,
             "rating": 5,
             "discount": "30%"
@@ -12,7 +12,7 @@
         },
         "Onida": {
           "Thunder": {
-            "image":"",
+            "image":"https://www.shutterstock.com/image-photo/plasma-lcd-oled-screen-260nw-355436399.jpg",
             "price": 25000,
             "rating": 3,
             "discount": "20%"
@@ -20,7 +20,7 @@
         },
         "Samsung":{
           "Thunder": {
-            "image":"",
+            "image":"https://www.shutterstock.com/image-photo/plasma-lcd-oled-screen-260nw-355436399.jpg",
             "price": 25000,
             "rating": 3,
             "discount": "20%"
@@ -28,7 +28,7 @@
         },
         "LG":{
           "Crystal 4K": {
-            "image":"",
+            "image":"https://www.shutterstock.com/image-photo/plasma-lcd-oled-screen-260nw-355436399.jpg",
             "price": 40000,
             "rating": 4,
             "discount": "10%"
@@ -36,7 +36,7 @@
         },
         "OnePlus":{
           "Y Series 4K": {
-            "image":"",
+            "image":"https://www.shutterstock.com/image-photo/plasma-lcd-oled-screen-260nw-355436399.jpg",
             "price": 30000,
             "rating": 4,
             "discount": "10%"
@@ -44,7 +44,7 @@
         },
         "Xiaomi":{
           "MI 5A": {
-            "image":"",
+            "image":"https://www.shutterstock.com/image-photo/plasma-lcd-oled-screen-260nw-355436399.jpg",
             "price": 25000,
             "rating": 4,
             "discount": "25%"
@@ -52,7 +52,7 @@
         },
         "Micromax":{
           "In Series": {
-            "image":"",
+            "image":"https://www.shutterstock.com/image-photo/plasma-lcd-oled-screen-260nw-355436399.jpg",
             "price": 15000,
             "rating": 3,
             "discount": "20%"
@@ -60,7 +60,7 @@
         },
         "Panasonic":{
           "Eluga": {
-            "image":"",
+            "image":"https://www.shutterstock.com/image-photo/plasma-lcd-oled-screen-260nw-355436399.jpg",
             "price": 25000,
             "rating": 4,
             "discount": "25%"
@@ -68,7 +68,7 @@
         },
         "Realme":{
           "Bezel": {
-            "image":"",
+            "image":"https://www.shutterstock.com/image-photo/plasma-lcd-oled-screen-260nw-355436399.jpg",
             "price": 25000,
             "rating": 3,
             "discount": "20%"
@@ -80,7 +80,7 @@
       "Brands": {
         "Apple": {
           "Iphone 14": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/1299655280/photo/apps-installed-on-a-samsung-galaxy-s21-smart-phone.jpg?s=612x612&w=0&k=20&c=w6rUAXJgmXJ8YMwqy5Ry59Vfw_334GYn72ZNsapmdlQ=",
             "price": 80000,
             "rating": 5,
             "discount": "20%"
@@ -88,7 +88,7 @@
         },
         "Xiaomi": {
           "Mi 11i Hypercharge": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/1299655280/photo/apps-installed-on-a-samsung-galaxy-s21-smart-phone.jpg?s=612x612&w=0&k=20&c=w6rUAXJgmXJ8YMwqy5Ry59Vfw_334GYn72ZNsapmdlQ=",
             "price": 32000,
             "rating": 5,
             "discount": "30%"
@@ -96,7 +96,7 @@
         },
         "One Plus":{
           "Nord 2": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/1299655280/photo/apps-installed-on-a-samsung-galaxy-s21-smart-phone.jpg?s=612x612&w=0&k=20&c=w6rUAXJgmXJ8YMwqy5Ry59Vfw_334GYn72ZNsapmdlQ=",
             "price": 30000,
             "rating": 4,
             "discount": "20%"
@@ -104,7 +104,7 @@
         },
         "Realme":{
           "Narzo 30": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/1299655280/photo/apps-installed-on-a-samsung-galaxy-s21-smart-phone.jpg?s=612x612&w=0&k=20&c=w6rUAXJgmXJ8YMwqy5Ry59Vfw_334GYn72ZNsapmdlQ=",
             "price": 16000,
             "rating": 3,
             "discount": "30%"
@@ -112,7 +112,7 @@
         },
         "Motorola":{
           "Edge 30": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/1299655280/photo/apps-installed-on-a-samsung-galaxy-s21-smart-phone.jpg?s=612x612&w=0&k=20&c=w6rUAXJgmXJ8YMwqy5Ry59Vfw_334GYn72ZNsapmdlQ=",
             "price": 35000,
             "rating": 5,
             "discount": "40%"
@@ -120,7 +120,7 @@
         },
         "POCO":{
           "M4 Pro 5g": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/1299655280/photo/apps-installed-on-a-samsung-galaxy-s21-smart-phone.jpg?s=612x612&w=0&k=20&c=w6rUAXJgmXJ8YMwqy5Ry59Vfw_334GYn72ZNsapmdlQ=",
             "price": 20000,
             "rating": 4,
             "discount": "10%"
@@ -128,7 +128,7 @@
         },
         "IQOO":{
           "z6 Lite": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/1299655280/photo/apps-installed-on-a-samsung-galaxy-s21-smart-phone.jpg?s=612x612&w=0&k=20&c=w6rUAXJgmXJ8YMwqy5Ry59Vfw_334GYn72ZNsapmdlQ=",
             "price": 22000,
             "rating": 4,
             "discount": "30%"
@@ -136,7 +136,7 @@
         },
         "Oppo":{
           "Reno 7": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/1299655280/photo/apps-installed-on-a-samsung-galaxy-s21-smart-phone.jpg?s=612x612&w=0&k=20&c=w6rUAXJgmXJ8YMwqy5Ry59Vfw_334GYn72ZNsapmdlQ=",
             "price": 40000,
             "rating": 4,
             "discount": "30%"
@@ -144,7 +144,7 @@
         },
         "Vivo":{
           "Y6": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/1299655280/photo/apps-installed-on-a-samsung-galaxy-s21-smart-phone.jpg?s=612x612&w=0&k=20&c=w6rUAXJgmXJ8YMwqy5Ry59Vfw_334GYn72ZNsapmdlQ=",
             "price": 23000,
             "rating": 3,
             "discount": "20%"
@@ -156,7 +156,7 @@
       "Brands": {
         "Dell": {
           "inspiron": {
-            "image":"",
+            "image":"https://thumbs.dreamstime.com/b/laptop-computer-blank-white-screen-mobile-table-cafe-background-139812612.jpg",
             "price": 100000,
             "rating": 4,
             "discount": "50%"
@@ -164,7 +164,7 @@
         },
         "HP": {
           "Pavilion": {
-            "image":"",
+            "image":"https://thumbs.dreamstime.com/b/laptop-computer-blank-white-screen-mobile-table-cafe-background-139812612.jpg",
             "price": 100000,
             "rating": 5,
             "discount": "40%"
@@ -172,7 +172,7 @@
         },
         "Apple":{
           "Macbook Pro": {
-            "image":"",
+            "image":"https://thumbs.dreamstime.com/b/laptop-computer-blank-white-screen-mobile-table-cafe-background-139812612.jpg",
             "price": 150000,
             "rating": 4,
             "discount": "30%"
@@ -180,7 +180,7 @@
         },
         "Lenovo":{
           "Thinkpad": {
-            "image":"",
+            "image":"https://thumbs.dreamstime.com/b/laptop-computer-blank-white-screen-mobile-table-cafe-background-139812612.jpg",
             "price": 100000,
             "rating": 4,
             "discount": "10%"
@@ -188,7 +188,7 @@
         },
         "Asus":{
           "Vivobook": {
-            "image":"",
+            "image":"https://thumbs.dreamstime.com/b/laptop-computer-blank-white-screen-mobile-table-cafe-background-139812612.jpg",
             "price": 80000,
             "rating": 4,
             "discount": "35%"
@@ -196,7 +196,7 @@
         },
         "Acer":{
           "Predator": {
-            "image":"",
+            "image":"https://thumbs.dreamstime.com/b/laptop-computer-blank-white-screen-mobile-table-cafe-background-139812612.jpg",
             "price": 70000,
             "rating": 3,
             "discount": "30%"
@@ -204,7 +204,7 @@
         },
         "Xiaomi":{
           "Notebook": {
-            "image":"",
+            "image":"https://thumbs.dreamstime.com/b/laptop-computer-blank-white-screen-mobile-table-cafe-background-139812612.jpg",
             "price": 60000,
             "rating": 2,
             "discount": "40%"
@@ -216,7 +216,7 @@
       "Brands": {
         "Highlander": {
           "Shirts": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/488160041/photo/mens-shirt.jpg?s=1024x1024&w=is&k=20&c=2tjFfoJUKw9x-JG1kJEPK8bEA5QGtXEvfT6zqY7KjlY=",
             "price": 1000,
             "rating": 3,
             "discount": "50%"
@@ -224,7 +224,7 @@
         },
         "Roadster": {
           "Jeans": {
-            "image":"",
+            "image":"https://thumbs.dreamstime.com/b/blue-jeans-isolated-white-34440719.jpg",
             "price": 2000,
             "rating": 4,
             "discount": "30%"
@@ -232,7 +232,7 @@
         },
         "Wrogn":{
           "Trousers": {
-            "image":"",
+            "image":"https://thumbs.dreamstime.com/b/blue-jeans-isolated-white-34440719.jpg",
             "price": 1500,
             "rating": 5,
             "discount": "10%"
@@ -240,7 +240,7 @@
         },
         "Buda Jeans Co.":{
           "Jackets": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/658909998/photo/jacket-dude.jpg?b=1&s=170667a&w=0&k=20&c=i7DejRIuqfyy9M7IYd6y4LBtIXEC69eMIXkJUoN3lEs=",
             "price": 6000,
             "rating": 4,
             "discount": "30%"
@@ -248,7 +248,7 @@
         },
         "HRX":{
           "Track Suits": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/658909998/photo/jacket-dude.jpg?b=1&s=170667a&w=0&k=20&c=i7DejRIuqfyy9M7IYd6y4LBtIXEC69eMIXkJUoN3lEs=",
             "price": 10000,
             "rating": 3,
             "discount": "20%"
@@ -256,7 +256,7 @@
         },
         "Being Human":{
           "T-Shirts": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/658909998/photo/jacket-dude.jpg?b=1&s=170667a&w=0&k=20&c=i7DejRIuqfyy9M7IYd6y4LBtIXEC69eMIXkJUoN3lEs=",
             "price": 2000,
             "rating": 5,
             "discount": "10%"
@@ -264,7 +264,7 @@
         },
         "Louis Phillipe":{
           "Shirts": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/488160041/photo/mens-shirt.jpg?s=1024x1024&w=is&k=20&c=2tjFfoJUKw9x-JG1kJEPK8bEA5QGtXEvfT6zqY7KjlY=",
             "price": 5000,
             "rating": 4,
             "discount": "50%"
@@ -272,7 +272,7 @@
         },
         "Blackberrys":{
           "Suits": {
-            "image":"",
+            "image":"https://media.istockphoto.com/id/658909998/photo/jacket-dude.jpg?b=1&s=170667a&w=0&k=20&c=i7DejRIuqfyy9M7IYd6y4LBtIXEC69eMIXkJUoN3lEs=",
             "price": 20000,
             "rating": 5,
             "discount": "40%"
@@ -280,7 +280,7 @@
         },
         "Mufti":{
           "Jeans": {
-            "image":"",
+            "image":"https://thumbs.dreamstime.com/b/blue-jeans-isolated-white-34440719.jpg",
             "price": 3000,
             "rating": 3,
             "discount": "10%"
@@ -292,7 +292,7 @@
       "Brands": {
         "Skybags": {
           "Laptop Bags": {
-            "image":"",
+            "image":"https://stagetry.com/blog/wp-content/uploads/2021/10/1-3-copy.jpg",
             "price": 1000,
             "rating": 4,
             "discount": "0%"
@@ -300,7 +300,7 @@
         },
         "American Tourister": {
           "Adventure Bags": {
-            "image":"",
+            "image":"https://stagetry.com/blog/wp-content/uploads/2021/10/1-3-copy.jpg",
             "price": 4000,
             "rating": 3,
             "discount": "25%"
@@ -308,7 +308,7 @@
         },
         "Samsonite":{
           "Luggage Bags": {
-            "image":"",
+            "image":"https://stagetry.com/blog/wp-content/uploads/2021/10/1-3-copy.jpg",
             "price": 10000,
             "rating": 4,
             "discount": "10%"
@@ -316,7 +316,7 @@
         },
         "VIP":{
           "Duffle Bags": {
-            "image":"",
+            "image":"https://stagetry.com/blog/wp-content/uploads/2021/10/1-3-copy.jpg",
             "price": 10000,
             "rating": 5,
             "discount": "30%"
@@ -324,7 +324,7 @@
         },
         "Aristocrat":{
           "Suitcase": {
-            "image":"",
+            "image":"https://stagetry.com/blog/wp-content/uploads/2021/10/1-3-copy.jpg",
             "price": 20000,
             "rating": 4,
             "discount": "10%"
@@ -332,7 +332,7 @@
         },
         "Tommy Hilfiger":{
           "Casual Bags": {
-            "image":"",
+            "image":"https://stagetry.com/blog/wp-content/uploads/2021/10/1-3-copy.jpg",
             "price": 1000,
             "rating": 4,
             "discount": "5%"
@@ -340,7 +340,7 @@
         },
         "Safari":{
           "Trolley Bags": {
-            "image":"",
+            "image":"https://stagetry.com/blog/wp-content/uploads/2021/10/1-3-copy.jpg",
             "price": 5000,
             "rating": 5,
             "discount": "5%"
@@ -352,7 +352,7 @@
       "Brands": {
         "Park Avenue": {
           "Deodorant": {
-            "image":"",
+            "image":"https://fashiontrendsandtipsblog.files.wordpress.com/2016/05/mens-grooming-products-that-actually-work.jpg",
             "price": 500,
             "rating": 4,
             "discount": "60%"
@@ -360,7 +360,7 @@
         },
         "Beardo": {
           "Beard Oil": {
-            "image":"",
+            "image":"https://fashiontrendsandtipsblog.files.wordpress.com/2016/05/mens-grooming-products-that-actually-work.jpg",
             "price": 1000,
             "rating": 3,
             "discount": "70%"
@@ -368,7 +368,7 @@
         },
         "Bombay Shaving Co.":{
           "After Shave Lotion": {
-            "image":"",
+            "image":"https://fashiontrendsandtipsblog.files.wordpress.com/2016/05/mens-grooming-products-that-actually-work.jpg",
             "price": 500,
             "rating": 4,
             "discount": "50%"
@@ -376,7 +376,7 @@
         },
         "Philips":{
           "Beard Trimmer": {
-            "image":"",
+            "image":"https://fashiontrendsandtipsblog.files.wordpress.com/2016/05/mens-grooming-products-that-actually-work.jpg",
             "price": 5000,
             "rating": 5,
             "discount": "50%"
@@ -384,7 +384,7 @@
         },
         "Ustraa":{
           "Charcoal Facewash": {
-            "image":"",
+            "image":"https://fashiontrendsandtipsblog.files.wordpress.com/2016/05/mens-grooming-products-that-actually-work.jpg",
             "price": 500,
             "rating": 2,
             "discount": "60%"
@@ -392,7 +392,7 @@
         },
         "FRSH":{
           "Perfume": {
-            "image":"",
+            "image":"https://fashiontrendsandtipsblog.files.wordpress.com/2016/05/mens-grooming-products-that-actually-work.jpg",
             "price": 1000,
             "rating": 4,
             "discount": "30%"
@@ -400,7 +400,7 @@
         },
         "Denver":{
           "Deodorant": {
-            "image":"",
+            "image":"https://fashiontrendsandtipsblog.files.wordpress.com/2016/05/mens-grooming-products-that-actually-work.jpg",
             "price": 500,
             "rating": 4,
             "discount": "80%"
@@ -408,7 +408,7 @@
         },
         "Syska":{
           "Beard Trimmer": {
-            "image":"",
+            "image":"https://fashiontrendsandtipsblog.files.wordpress.com/2016/05/mens-grooming-products-that-actually-work.jpg",
             "price": 5000,
             "rating": 4,
             "discount": "40%"
@@ -416,7 +416,7 @@
         },
         "Garnier":{
           "Facewash": {
-            "image":"",
+            "image":"https://fashiontrendsandtipsblog.files.wordpress.com/2016/05/mens-grooming-products-that-actually-work.jpg",
             "price": 500,
             "rating": 5,
             "discount": "60%"

@@ -1,19 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import {CategoryContainer,CategoryTitle,CategoryList,CategoryItem,CategoryLink} from './styledComponents/Index';
 
 function Category({ data, category }) {
-      return (
-        <div>
-          <h1>{category}</h1>
-          <ul>
-            {Object.keys(data.Brands).map((brand) => (
-              <li key={brand}>
-                <Link to={`/categories/${category}/${brand}`}>{brand}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      );
-    }
+  return (
+    <CategoryContainer>
+      <CategoryTitle>{category}</CategoryTitle>
+      <CategoryList>
+        {Object.keys(data.Brands).map((brand) => (
+          <CategoryItem key={brand}>
+            <CategoryLink to={`/categories/${category}/${brand}`}>{brand}</CategoryLink>
+          </CategoryItem>
+        ))}
+      </CategoryList>
+    </CategoryContainer>
+  );
+}
 
-export default Category
+export default Category;
