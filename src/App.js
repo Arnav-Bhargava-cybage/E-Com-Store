@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Category from './components/Category';
 import Brand from './components/Brand';
 import Product from './components/Product';
+import Tab from './components/Tab';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <header>
           <Nav>
             <ul>
-            <li>
+              <li>
                 <Link to="/"><img src='https://img.freepik.com/free-photo/order-concept-with-wooden-block-paper-basket-icon-blue-table-flat-lay-man-hand-pointing_176474-10443.jpg?w=996&t=st=1679479112~exp=1679479712~hmac=5f0797dfffa2fdec5f1f23ff9817459064cd53d30a40aa75f6d1750689f36d8c' height={72} width={156} alt="Home"></img></Link>
               </li>
               <li>
@@ -38,6 +39,7 @@ function App() {
               </li>
             </ul>
           </Nav>
+          <Tab/>
         </header>
         <Main>
           <Routes>
@@ -77,3 +79,5 @@ function App() {
 }
 
 export default App;
+
+
