@@ -3,3 +3,4 @@ export {HomeContainer,HomeTitle} from './HomeContainer';
 export {Card,Image,Price,Rating,StarIcon,Discount} from './Product';
 export {BrandWrapper,Title,List,ListItem,StyledLink} from './Brand';
 export {CategoryContainer,CategoryTitle,CategoryList,CategoryItem,CategoryLink} from './Category';
+export {TabWrapper,TabItem,TabInput,TabButton} from './Tab';
