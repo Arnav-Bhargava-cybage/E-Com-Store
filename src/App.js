@@ -8,6 +8,7 @@ import Category from './components/Category';
 import Brand from './components/Brand';
 import Product from './components/Product';
 import Tab from './components/Tab';
+import Filter from './components/Filter';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Tab/>
         </header>
         <Main>
+          <Filter/>
           <Routes>
               <Route path="/" element={<Home />} />
             {Object.entries(Products.categories).map(([category, data]) => (
@@ -79,6 +81,9 @@ function App() {
 }
 
 export default App;
+
+
+
 
 
 

@@ -1,110 +1,126 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import products from '../data/Products.json';
+import Select from 'react-select';
+import productsData from "../data/Products.json";
+import Product from './Product';
 
-const FiltersContainer = styled.div`
-  background-color: #f2f2f2;
-  padding: 10px;
+const FilterContainer = styled.div`
+  display: flex;
 `;
 
 const FilterSection = styled.div`
-  margin-bottom: 10px;
+  width: 25%;
+  padding: 20px;
 `;
 
-const FilterLabel = styled.label`
-  font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
+const ProductsSection = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 75%;
+  padding: 20px;
 `;
 
-const FilterCheckbox = styled.input`
-  margin-right: 5px;
-`;
+const Filter = () => {
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedBrand, setSelectedBrand] = useState(null);
+  const [selectedPrice, setSelectedPrice] = useState(null);
 
-const FilterButton = styled.button`
-  margin-top: 10px;
-`;
-
-const Filter = ({ onFilter }) => {
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [selectedBrands, setSelectedBrands] = useState([]);
-  const [minPrice, setMinPrice] = useState(0);
-  const [maxPrice, setMaxPrice] = useState(9999999);
-
-  const handleCategoryChange = (event) => {
-    const categoryName = event.target.value;
-    if (event.target.checked) {
-      setSelectedCategories([...selectedCategories, categoryName]);
-    } else {
-      setSelectedCategories(selectedCategories.filter((name) => name !== categoryName));
-    }
+  const handleCategoryChange = (selectedOption) => {
+    setSelectedCategory(selectedOption);
   };
 
-  const handleBrandChange = (event) => {
-    const brandName = event.target.value;
-    if (event.target.checked) {
-      setSelectedBrands([...selectedBrands, brandName]);
-    } else {
-      setSelectedBrands(selectedBrands.filter((name) => name !== brandName));
-    }
+  const handleBrandChange = (selectedOption) => {
+    setSelectedBrand(selectedOption);
   };
 
-  const handlePriceChange = (event, setter) => {
-    const value = parseInt(event.target.value);
-    if (!isNaN(value)) {
-      setter(value);
-    }
+  const handlePriceChange = (selectedOption) => {
+    setSelectedPrice(selectedOption);
   };
 
-  const handleFilter = () => {
-    onFilter({
-      categories: selectedCategories,
-      brands: selectedBrands,
-      minPrice,
-      maxPrice,
-    });
-  };
+  const categories = Object.keys(productsData.categories).map((category) => {
+    return { value: category, label: category };
+  });
+
+  const brands = selectedCategory
+    ? Object.keys(productsData.categories[selectedCategory.value].Brands).map(
+        (brand) => {
+          return { value: brand, label: brand };
+        }
+      )
+    : [];
+
+  const prices = selectedBrand
+    ? Object.keys(
+        productsData.categories[selectedCategory.value].Brands[
+          selectedBrand.value
+        ]
+      ).map((product) => {
+        return {
+          value: productsData.categories[selectedCategory.value].Brands[
+            selectedBrand.value
+          ][product].price,
+          label: productsData.categories[selectedCategory.value].Brands[
+            selectedBrand.value
+          ][product].price,
+        };
+      })
+    : [];
+
+  const filteredProducts =
+    selectedPrice && selectedBrand && selectedCategory
+      ? Object.keys(
+          productsData.categories[selectedCategory.value].Brands[
+            selectedBrand.value
+          ]
+        ).reduce((acc, product) => {
+          if (
+            productsData.categories[selectedCategory.value].Brands[
+              selectedBrand.value
+            ][product].price <= selectedPrice.value
+          ) {
+            acc.push(
+              productsData.categories[selectedCategory.value].Brands[
+                selectedBrand.value
+              ][product]
+            );
+          }
+          return acc;
+        }, [])
+      : [];
 
   return (
-    <FiltersContainer>
+    <FilterContainer>
       <FilterSection>
-        <FilterLabel>Categories</FilterLabel>
-        {Object.keys(products.categories).map((categoryName) => (
-          <div key={categoryName}>
-            <FilterCheckbox
-              type="checkbox"
-              id={`category-${categoryName}`}
-              value={categoryName}
-              onChange={handleCategoryChange}
-            />
-            <label htmlFor={`category-${categoryName}`}>{categoryName}</label>
-          </div>
+        <Select
+          placeholder="Select category"
+          value={selectedCategory}
+          options={categories}
+          onChange={handleCategoryChange}
+        />
+        {selectedCategory && (
+          <Select
+            placeholder="Select brand"
+            value={selectedBrand}
+            options={brands}
+            onChange={handleBrandChange}
+          />
+        )}
+        {selectedBrand && (
+          <Select
+            placeholder="Select max price"
+            value={selectedPrice}
+            options={prices}
+            onChange={handlePriceChange}
+          />
+        )}
+      </FilterSection>
+      <ProductsSection>
+        {filteredProducts.map((product) => (
+          <Product key={product.name} data={product} />
         ))}
-      </FilterSection>
-      <FilterSection>
-        <FilterLabel>Brands</FilterLabel>
-        {Object.keys(products.categories.TV.Brands).map((brandName) => (
-          <div key={brandName}>
-            <FilterCheckbox
-              type="checkbox"
-              id={`brand-${brandName}`}
-              value={brandName}
-              onChange={handleBrandChange}
-            />
-            <label htmlFor={`brand-${brandName}`}>{brandName}</label>
-          </div>
-        ))}
-      </FilterSection>
-      <FilterSection>
-        <FilterLabel>Price Range</FilterLabel>
-        <div>
-          <input type="number" placeholder="Min Price" value={minPrice} onChange={(e) => handlePriceChange(e, setMinPrice)} />
-          <span>-</span>
-          <input type="number" placeholder="Max Price" value={maxPrice} onChange={(e) => handlePriceChange(e, setMaxPrice)} />
-        </div>
-      </FilterSection>
-      <FilterButton onClick={handleFilter}>Filter</FilterButton>
-    </FiltersContainer>
+      </ProductsSection>
+    </FilterContainer>
   );
 };
 
