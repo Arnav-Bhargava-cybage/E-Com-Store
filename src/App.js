@@ -30,13 +30,13 @@ function App() {
                 <Link to="/categories/Laptops">Laptops</Link>
               </li>
               <li>
-                <Link to="/categories/Men%20Clothing">Men Clothing</Link>
+                <Link to="/categories/Men%20Clothing">Men's Clothing</Link>
               </li>
               <li>
                 <Link to="/categories/Bagpacks">Bagpacks</Link>
               </li>
               <li>
-                <Link to="/categories/Men%20Grooming">Men Grooming</Link>
+                <Link to="/categories/Men%20Grooming">Men's Grooming</Link>
               </li>
             </ul>
           </Nav>
