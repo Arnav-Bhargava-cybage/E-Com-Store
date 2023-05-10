@@ -31,7 +31,7 @@ const EditTab = () => {
         navigate('/');
     }
     return (
-        <div style={{ display: 'flex', gap: '5px' }}>
+        <div style={{ display: 'flex', alignItems:'center', gap:'16px' }}>
             <TextField
                 label="Name:"
                 inputProps={{ type: 'text', placeholder: 'John Doe' }}

@@ -20,14 +20,15 @@ export const ButtonGroup = styled.div`
  
 `
 export const Button1 = styled.button`
-color: #ececec;
+color: #fff;
 display: inline-block;
 text-decoration: none;
-background-color: #2c3e50;
+background-color: #0717ce;
 padding: 4px 16px ;
 margin: 12px 0px;
-border-radius: 1rem;
+border-radius: 10px;
 font-size: 14px;
+font-weight:bolder;
 transition: all 0.2s;
 &:hover{
   transform: scale(1.1);

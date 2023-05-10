@@ -9,7 +9,7 @@ ul {
   height: 64px;
   justify-content: space-around;
   align-items:center;
-  background-color: #dcffeb;
+  background-color: #ffff54;
   border-bottom: 4px solid #ccc;
   border-top: 4px solid #ccc;
 }
@@ -19,11 +19,17 @@ li {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  &:hover {
-    background-color: #98ffc5;
-  }
   &:first-child{
     background-color:transparent;
+  }
+}
+
+li a{
+  text-decoration:none;
+  color:#0717ce;
+  font-size:24px;
+  &:hover {
+    color:blue;
   }
 }
 `;
