@@ -4,31 +4,32 @@ import Select from "react-select";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import productsData from "../data/Products.json";
 import Product from "./Product";
+import Home from "./Home";
 
 const FilterContainer = styled.div`
   display: flex;
-  margin-top:24px;
-  height:100%;
+  margin-top: 24px;
+  height: 100%;
 `;
 
 const FilterSection = styled.div`
-  display:flex;
-  height:450px;
-  flex-direction:column;
-  justify-content:space-evenly;
+  display: flex;
+  height: 450px;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 25%;
   padding: 20px;
   background-color: #ffff64;
   border: 4px solid #ccc;
   border-radius: 10px;
 
-  label{
-    color:#0717ce;
-    font-weight:bold;
-    font-size:18px;
+  label {
+    color: #0717ce;
+    font-weight: bold;
+    font-size: 18px;
   }
-  select{
-    font-weight:bold;
+  select {
+    font-weight: bold;
   }
 `;
 
@@ -65,7 +66,7 @@ const Filter = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedBrand, setSelectedBrand] = useState(null);
   const [filteredProducts, setFilteredProducts] = useState([]);
-
+  const [noProductsFound, setNoProductsFound] = useState(false);
   const [selectedMinPrice, setSelectedMinPrice] = useState(null);
   const [selectedMaxPrice, setSelectedMaxPrice] = useState(null);
   const [reset, setReset] = useState(false);
@@ -84,23 +85,31 @@ const Filter = () => {
     setSelectedMaxPrice(maxPrice);
 
     if (selectedCategory && selectedBrand) {
-      const filteredProducts = Object.keys(
-        productsData.categories[selectedCategory.value].Brands[
-        selectedBrand.value
-        ]
-      )
-        .map((product) => {
-          return productsData.categories[selectedCategory.value].Brands[
-            selectedBrand.value
-          ][product];
-        })
-        .filter(
+      const categoryData = productsData.categories[selectedCategory.value];
+      const brandData =
+        categoryData && categoryData.Brands
+          ? categoryData.Brands[selectedBrand.value]
+          : null;
+
+      if (brandData) {
+        const filteredProducts = Object.values(brandData).filter(
           (product) =>
             (!minPrice || product.price >= minPrice) &&
             (!maxPrice || product.price <= maxPrice)
         );
-      navigate("/products");
-      setFilteredProducts(filteredProducts);
+
+        if (filteredProducts.length === 0) {
+          setNoProductsFound(true);
+        } else {
+          setNoProductsFound(false);
+        }
+
+        navigate("/products");
+        setFilteredProducts(filteredProducts);
+      } else {
+        setNoProductsFound(true);
+        setFilteredProducts([]);
+      }
     }
   };
 
@@ -119,30 +128,30 @@ const Filter = () => {
   });
 
   const brands = selectedCategory
-    ? Object.keys(productsData.categories[selectedCategory.value].Brands).map(
-      (brand) => {
+    ? Object.keys(
+        productsData.categories[selectedCategory?.value]?.Brands || {}
+      ).map((brand) => {
         return { value: brand, label: brand };
-      }
-    )
+      })
     : [];
 
   const prices = selectedBrand
     ? Object.keys(
-      productsData.categories[selectedCategory.value].Brands[
-      selectedBrand.value
-      ]
-    ).map((product) => {
-      return {
-        value:
-          productsData.categories[selectedCategory.value].Brands[
-            selectedBrand.value
-          ][product].price,
-        label:
-          productsData.categories[selectedCategory.value].Brands[
-            selectedBrand.value
-          ][product].price,
-      };
-    })
+        productsData.categories[selectedCategory?.value]?.Brands?.[
+          selectedBrand?.value
+        ] || {}
+      ).map((product) => {
+        return {
+          value:
+            productsData.categories[selectedCategory?.value]?.Brands?.[
+              selectedBrand?.value
+            ]?.[product]?.price,
+          label:
+            productsData.categories[selectedCategory?.value]?.Brands?.[
+              selectedBrand?.value
+            ]?.[product]?.price,
+        };
+      })
     : [];
 
   return (
@@ -189,18 +198,26 @@ const Filter = () => {
           >
             Apply
           </Button>
-          <Button style={{ marginLeft: '16px' }}
-            onClick={handleReset}
-          >
+          <Button style={{ marginLeft: "16px" }} onClick={handleReset}>
             Reset
           </Button>
         </div>
       </FilterSection>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route
           path="/products"
           element={
+            // <ProductsSection>
+            //   {filteredProducts.map((product) => (
+            //     <Product key={product.name} data={product} />
+            //   ))}
+            // </ProductsSection>
             <ProductsSection>
+              {filteredProducts.length === 0 && noProductsFound && (
+                <p>No products found</p>
+              )}
+
               {filteredProducts.map((product) => (
                 <Product key={product.name} data={product} />
               ))}

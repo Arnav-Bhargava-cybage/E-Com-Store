@@ -1,0 +1,7 @@
+{
+    "image": "test-image.jpg",
+    "name": "Test Product",
+    "price": 100,
+    "rating": 4,
+    "discount": "10%"
+  }
