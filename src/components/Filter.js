@@ -15,7 +15,7 @@ const FilterSection = styled.div`
   display:flex;
   height:450px;
   flex-direction:column;
-  justify-content:space-between;
+  justify-content:space-evenly;
   width: 25%;
   padding: 20px;
   background-color: #ffff64;
@@ -41,18 +41,17 @@ const ProductsSection = styled.div`
 `;
 
 const Label = styled.label`
-  margin-bottom: 10px;
   font-weight: bold;
 `;
 
 const Input = styled.input`
   margin-bottom: 10px;
+  margin-top: 20px;
   padding: 5px;
   width: 95%;
 `;
 
 const Button = styled.button`
-  margin-top: 10px;
   padding: 10px 20px;
   font-weight: bold;
   font-size: 16px;
